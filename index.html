@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title> ℂ𝕒𝕗𝕗𝕖𝕚𝕟𝕖 𝕊𝕔𝕖𝕟𝕖 𝕔𝕒𝕗𝕖</title>
+    <link rel="icon" href="indeximg/brown-cafe.png" sizes="96x96">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f0;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: #f8f5f0;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: rgb(213, 193, 184);
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #795548;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #f8f5f0;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d7ccc8;
+        }
+        
+
+        nav a:hover, nav a.active {
+            color: #f8f5f0;
+        }
+
+        /* Simple underline effect */
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #f8f5f0;
+            transition: width 0.3s;
+            margin-top: 5px;
+        }
+
+        nav a.active::after {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #3e2723;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .featured-coffee {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .coffee-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            width: 30%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+
+        .coffee-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .coffee-item img {
+            width: 50%;
+            height: 50%;
+            border-radius: 15px;
+        }
+
+        .coffee-item h3 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #3e2723;
+        }
+
+        .coffee-item p {
+            font-size: 16px;
+            color: #6d4c41;
+            margin-top: 10px;
+        }
+        .social-container{
+            padding-right: 300%;
+            position: sticky;
+            left: 40px;
+            bottom: 70px; 
+            z-index: 1000;
+        }
+        .social-icons {
+            position: fixed; /* Fixes the icons on the page */
+            left: 10px;      /* Adjusts the position to the left */
+            top: 50%;
+            list-style-type: none;        /* Centers the icons vertically */
+            transform: translateY(-50%); /* Fine-tunes the vertical centering */
+            z-index: 1000;   /* Ensures the icons are above other elements */
+        }
+        .social-icons li{
+            margin: 10px 0;
+        }  
+        .social-icons li i{
+            color: rgba(188, 159, 135, 0.77);
+            font-size: 20px;
+        }
+        .social-icons li a:hover i{
+            transform: scale(1.5);
+            color: #846445;
+            transition: all .2s ease-in-out;
+        }
+   
+      
+
+        footer {
+            background-color: #3e2723;
+            color: #f8f5f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .social-footer {
+            margin-top: 10px;
+        }
+
+        .social-footer a {
+            color: #bc8f61e1;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-footer a:hover {
+            color: #d7ccc8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> ℂ𝕒𝕗𝕗𝕖𝕚𝕟𝕖 𝕊𝕔𝕖𝕟𝕖 𝕔𝕒𝕗𝕖 </h1>
+        <p>𝘞𝘩𝘦𝘳𝘦 𝘌𝘷𝘦𝘳𝘺 𝘚𝘪𝘱 𝘍𝘦𝘦𝘭𝘴 𝘓𝘪𝘬𝘦 𝘏𝘰𝘮𝘦</p>
+    </header>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Our Featured Coffees</h1>
+
+        <div class="featured-coffee">
+
+            <div class="coffee-item">
+                <img src="indeximg/espresso_supremo_400x299.webp" alt="Espresso" >
+                <h3>Espresso</h3>
+                <p>Rich and bold, our espresso is a true classic.</p>
+            </div>
+        
+            <div class="coffee-item">
+                <img src="indeximg/Cup-of-Cappuccino-1024x1024.jpg" alt="Cappuccino" >
+                <h3>Cappuccino</h3>
+                <p>Perfectly balanced with frothy milk and robust coffee.</p>
+            </div>
+        
+            <div class="coffee-item">
+                <img src="indeximg/oat-milk-latte4-500x500.jpg" alt="Latte" >
+                <h3>Latte</h3>
+                <p>Smooth, creamy, and just the right amount of sweetness.</p>
+            </div>
+        </div>
+        <h1>Our Featured Sandwishes</h1>
+        <div class="featured-coffee">
+
+            <div class="coffee-item">
+                <img src="menu-img/turkey-apple-grilled-cheese-sandwich-copy-720x540.jpg" alt="Espresso" >
+                <h3>Turkey-cheese Sandwish</h3>
+                <p>Rich and bold, our espresso is a true classic.</p>
+            </div>
+        
+            <div class="coffee-item">
+                <img src="menu-img/smoked-salmon-bagel-sandwich-500x375.jpg" alt="Cappuccino" >
+                <h3>Salmon-Avocado Sandwish</h3>
+                <p>Perfectly balanced with frothy milk and robust coffee.</p>
+            </div>
+        
+            <div class="coffee-item">
+                <img src="menu-img/chicken-sandwiches-su-1683591-x.jpg" alt="Latte" >
+                <h3>chicken-Bacon and bluecheese Sandwish</h3>
+                <p>Smooth, creamy, and just the right amount of sweetness.</p>
+            </div>
+        </div>
+        <div class="social-container">
+            <div class="social-icons">
+                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+           </div>
+       </div>
+  
+            
+    </div>
+
+    <footer>
+        <p>Follow us</p>
+        <div class="social-footer">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><strong>Address:</strong> john albert</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Hours:</strong> 24/7 Support</p>
+        </div>
+        <p>&copy; 2024 ℂ𝕒𝕗𝕗𝕖𝕚𝕟𝕖 𝕊𝕔𝕖𝕟𝕖 𝕔𝕒𝕗𝕖. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
